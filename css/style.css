@@ -1,0 +1,1240 @@
+/*
+	Theme Name: sumergete
+	Theme URI: http://www.sumergete.cl
+	Description: stylesheet
+	Version: 1.0
+	Author: Daniel Gatica
+	Author URI: -
+	Tags: IMO, HTML5, CSS3, JavaScript
+*/
+
+
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+
+/* global box-sizing */
+*,
+*:after,
+*:before {
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+/* html element 62.5% font-size for REM use */
+html {
+	font-size:62.5%;
+}
+body {
+	font:300 11px/1.4 Pacifico, Roboto, Arial, sans-serif;
+	color:#444;
+	padding: 0;
+	margin: 0;
+}
+/* clear */
+.clear:before,
+.clear:after {
+    content:' ';
+    display:table;
+}
+
+.clear:after {
+    clear:both;
+}
+.clear {
+    *zoom:1;
+}
+img {
+	max-width:100%;
+	vertical-align:bottom;
+}
+a {
+	color:#444;
+	text-decoration:none;
+}
+a:hover {
+	color:#444;
+}
+a:focus {
+	outline:0;
+}
+a:hover,
+a:active {
+	outline:0;
+}
+input:focus {
+	outline:0;
+	border:1px solid #04A4CC;
+}
+b {
+	font-weight: bold;
+}
+i {
+	font-style: italic;
+}
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+
+/*------------------------------------*\
+    STRUCTURE
+\*------------------------------------*/
+
+/* wrapper */
+.wrapper {
+	max-width:1280px;
+	width:95%;
+	margin:0 auto;
+	position:relative;
+}
+/* header */
+.header {
+
+}
+/* logo */
+.logo {
+
+}
+.logo-img {
+
+}
+/* nav */
+.nav {
+
+}
+/* sidebar */
+.sidebar {
+
+}
+/* footer */
+.footer {
+
+}
+
+/*------------------------------------*\
+    PAGES
+\*------------------------------------*/
+
+/*---------HOME-----------*/
+
+/* Composición del menú principal */
+.home-menu-flotador {
+	position: fixed;
+	z-index: 2;
+	width: 18%;
+	left: -0.3%;
+	bottom: -2.9%;
+}
+.home-menu-poste {
+    display: none;
+    opacity: 0;
+	position: absolute;
+	z-index: -1;
+	width: 8%;
+	left: 35%;
+	top: 0%;
+}
+.home-menu-poste-arriba {
+	-webkit-transition: 0.3s;
+  	-moz-transition: 0.3s;
+  	-ms-transition: 0.3s;
+  	-o-transition: 0.3s;
+  	transition: 0.3s;
+  	/*
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	*/
+	left: 35%;
+	top: -100%;
+	opacity: 1;
+}
+.home-menu-poste-abajo {
+	-webkit-transition: 0.3s;
+  	-moz-transition: 0.3s;
+  	-ms-transition: 0.3s;
+  	-o-transition: 0.3s;
+  	transition: 0.3s;
+  	/*
+  	-webkit-transform: rotate(0deg);
+  	-moz-transform: rotate(0deg);
+  	-ms-transform: rotate(0deg);
+  	-o-transform: rotate(0deg);
+  	transform: rotate(0deg);
+  	*/
+	left: 35%;
+	top: 0%;
+	opacity: 0;
+}
+.home-menu-bandera-proyectos {
+	display: none;
+    opacity: 0;
+	position: absolute;
+	z-index: -1;
+	width: 70%;
+	left: 42%;
+	top: -90%;
+}
+.bandera-proyectos-arriba {
+	-webkit-transition: 0.3s;
+  	-moz-transition: 0.3s;
+  	-ms-transition: 0.3s;
+  	-o-transition: 0.3s;
+  	transition: 0.3s;
+  	opacity: 1;
+  	display: block;
+}
+.bandera-proyectos-abajo {
+	-webkit-transition: 0.3s;
+  	-moz-transition: 0.3s;
+  	-ms-transition: 0.3s;
+  	-o-transition: 0.3s;
+  	transition: 0.3s;
+  	opacity: 0;
+  	display: none;
+}
+.home-menu-bandera-nosotros {
+	display: none;
+    opacity: 0;
+	position: absolute;
+	z-index: -1;
+	width: 70%;
+	left: 42%;
+	top: -60%;
+}
+.bandera-nosotros-arriba {
+	-webkit-transition: 0.3s;
+  	-moz-transition: 0.3s;
+  	-ms-transition: 0.3s;
+  	-o-transition: 0.3s;
+  	transition: 0.3s;
+  	opacity: 1;
+  	display: block;
+}
+.bandera-nosotros-abajo {
+	-webkit-transition: 0.3s;
+  	-moz-transition: 0.3s;
+  	-ms-transition: 0.3s;
+  	-o-transition: 0.3s;
+  	transition: 0.3s;
+  	opacity: 0;
+  	display: none;
+}
+.home-menu-bandera-participa {
+	display: none;
+    opacity: 0;
+	position: absolute;
+	z-index: -1;
+	width: 70%;
+	left: 42%;
+	top: -30%;
+}
+.bandera-participa-arriba {
+	-webkit-transition: 0.3s;
+  	-moz-transition: 0.3s;
+  	-ms-transition: 0.3s;
+  	-o-transition: 0.3s;
+  	transition: 0.3s;
+  	opacity: 1;
+  	display: block;
+}
+.bandera-participa-abajo {
+	-webkit-transition: 0.3s;
+  	-moz-transition: 0.3s;
+  	-ms-transition: 0.3s;
+  	-o-transition: 0.3s;
+  	transition: 0.3s;
+  	opacity: 0;
+  	display: none;
+}
+.texto-banderas {
+	position: absolute;
+	top: 20%;
+	left: 8%;
+	font-family: "Pacifico";
+	font-size:1.8vw;
+	color: white;
+}
+/*
+.home-fondo {
+	position: relative;
+	background-color: #000080;
+	max-width: 1980px;
+	max-height: 3000px;
+	padding-bottom: 151%;
+}
+.home-mar {	
+	position: absolute;
+	width: 100%;
+	top: 0%;
+	left: 0%;
+	max-width: 1980px;
+}
+.home-continente {
+	position: absolute;
+	width: 60%;
+	top: 0%;
+	right: 0%;
+	max-width: 1254px;
+}
+.home-antartica {
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	left: 0%;
+	max-width: 1252px;
+}
+.home-islas {
+	position: absolute;
+	width: 10%;
+	top: 11%;
+	left: 24%;
+	max-width: 242px;
+}
+.btn-sala-islasoceanicas {
+	position: absolute;
+	width: 7%;
+	top: 8%;
+	left: 28%;
+	-webkit-transition: 0.3s;
+  	-moz-transition: 0.3s;
+  	-ms-transition: 0.3s;
+  	-o-transition: 0.3s;
+  	transition: 0.3s;
+}
+.btn-sala-islasoceanicas-agrandar {
+	width: 12%;
+	top: 3%;
+	left: 24%;
+	-webkit-transition: 0.3s;
+  	-moz-transition: 0.3s;
+  	-ms-transition: 0.3s;
+  	-o-transition: 0.3s;
+  	transition: 0.3s;
+}
+.btn-sala-intermareal {
+	position: absolute;
+	width: 7%;
+	top: 41%;
+	right: 18%;
+	-webkit-transition: 0.3s;
+  	-moz-transition: 0.3s;
+  	-ms-transition: 0.3s;
+  	-o-transition: 0.3s;
+  	transition: 0.3s;
+}
+.btn-sala-intermareal-agrandar {
+	width: 12%;
+	top: 37.2%;
+	right: 15%;
+	-webkit-transition: 0.3s;
+  	-moz-transition: 0.3s;
+  	-ms-transition: 0.3s;
+  	-o-transition: 0.3s;
+  	transition: 0.3s;
+}
+.btn-sala-oceanocostero {
+	position: absolute;
+	width: 7%;
+	top: 29%;
+	right: 27.5%;
+	-webkit-transition: 0.3s;
+  	-moz-transition: 0.3s;
+  	-ms-transition: 0.3s;
+  	-o-transition: 0.3s;
+  	transition: 0.3s;
+}
+.btn-sala-oceanocostero-agrandar {
+	width: 12%;
+	top: 25%;
+	right: 25%;
+	-webkit-transition: 0.3s;
+  	-moz-transition: 0.3s;
+  	-ms-transition: 0.3s;
+  	-o-transition: 0.3s;
+  	transition: 0.3s;
+}
+*/
+/**formas para centrar un div**/
+
+.div_center {
+	position:absolute;
+  	left: 50%;
+  	top: 50%;
+  	-webkit-transform: translate(-50%, -50%);
+   	-moz-transform: translate(-50%, -50%); 
+   	-ms-transform: translate(-50%, -50%); 
+   	-o-transform: translate(-50%, -50%); 
+   	transform: translate(-50%, -50%); 
+
+}
+/*posible opción creo con compatibilidad IE*/
+.cn {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.inner {
+  display: inline-block;
+  margin: 10px 0px;
+}
+/*éste es el que sirve, se le pone al div que contenga cosas a alinear*/
+.outer {
+  display : flex;
+  align-items : center;
+  justify-content: center;
+}
+
+/****/
+
+/**dropdown menu**/
+
+.dropdown-content {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    background-color: #f9f9f9;
+    width: 100px;
+    height: 50px;
+    bottom: 200px;
+    left: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+}
+.dropdown-content.verticalTranslate {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  /*margin-bottom: 5% !important;*/
+  bottom: 300px;
+  opacity: 1;
+}
+.dropdown-content.verticalTranslateBack {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  /*margin-top: 5% !important;*/
+  bottom: 200px;
+  opacity: 0;
+}
+/****/
+
+.home-barra-logos {
+	max-width: 1200px;
+	width: 100%;
+	height: 40px;
+	background-color: black;
+	position: fixed;
+	bottom: 0px;
+}
+.home-logo1 {
+	width: 20px;
+	height: 20px;
+	background-color: orange;
+	/*float: left;
+	display: inline-block;*/
+	margin: 0 10px;
+}
+.home-logo2 {
+	width: 30px;
+	height: 30px;
+	background-color: orange;
+	float: left;
+	margin: 30px 5px;
+
+}
+.home-logo3 {
+	width: 25px;
+	height: 25px;
+	background-color: orange;
+	float: left;
+	margin-left: 30px;
+}
+.home-logo4 {
+	width: 25px;
+	height: 25px;
+	background-color: orange;
+	float: left;
+	margin-left: 30px;
+}
+
+
+/*---------HOME PROYECTOS-----------*/
+
+.proyectos-fondo {
+	position: relative;
+	background-color: #0A2360;
+	max-width: 1980px;
+	max-height: 1080px;
+	padding-bottom: 72.7%; /* 56.25 -> 16:9 Aspect Ratio */
+}
+.proyectos-textura-fondo {
+	position: absolute;
+	width: 100%;
+	top: 0%;
+	left: 0%;
+	max-width: 1980px;
+}
+.proyectos-nube-titulo {
+	position: absolute;
+	width: 30%;
+	top: 15%;
+	left: 35%;
+}
+.proyectos-maci {
+	position: absolute;
+	width: 18%;
+	top: 35%;
+	left: 28%;
+}
+.proyectos-tony {
+	position: absolute;
+	width: 18%;
+	top: 35%;
+	left: 58%;
+}
+.proyectos-fuerzadelmar {
+	position: absolute;
+	width: 18%;
+	top: 61%;
+	left: 42%;
+}
+
+
+/*---------HOME NOSOTROS-----------*/
+.nosotros-fondo {
+	position: relative;
+	/*background-color: #CCCC19;*/
+	background-color: #0A2360;
+	max-width: 1980px;
+	max-height: 1080px;
+	padding-bottom: 72.7%; /* 56.25 -> 16:9 Aspect Ratio */
+}
+.nosotros-textura-fondo {
+	position: absolute;
+	width: 100%;
+	top: 0%;
+	left: 0%;
+	max-width: 1980px;
+}
+.nosotros-nube-titulo {
+	position: absolute;
+	width: 30%;
+	top: 15%;
+	left: 35%;
+}
+.proyectos-maci {
+	position: absolute;
+	width: 18%;
+	top: 35%;
+	left: 28%;
+}
+.proyectos-tony {
+	position: absolute;
+	width: 18%;
+	top: 35%;
+	left: 58%;
+}
+.proyectos-fuerzadelmar {
+	position: absolute;
+	width: 18%;
+	top: 61%;
+	left: 42%;
+}
+
+/*---------HOME PROYECTOS TONY-----------*/
+.proyectos-tony-detail-logo {
+	position: absolute;
+	width: 15%;
+	top: 12%;
+	left: 42%;
+}
+.proyectos-tony-detail-titulo {
+	position: absolute;
+	width: 50%;
+	top: 31%;
+	left: 26%;
+	font-family: "Roboto";
+	font-size: 2vw;
+	text-align: center;
+	color: white;
+}
+.proyectos-tony-detail-contenido {
+	position: absolute;
+	top: 36%;
+	left: 23%;
+	width: 62%;
+	font-family: "Roboto";
+	font-size: 1vw;
+	text-align: justify;
+	color: white;
+}
+.proyectos-tony-detail-pic {
+	position: absolute;
+	width: 22%;
+	top: 59%;
+	left: 41%;
+}
+.proyectos-tony-detail-mark {
+	position: absolute;
+	width: 9%;
+	top: 56%;
+	left: 77%;
+}
+.proyectos-tony-detail-link {
+	position: absolute;
+	width: 18%;
+	top: 100%;
+	left: -50%;
+	font-family: "Roboto";
+	font-size: 2vw;
+	text-align: justify;
+	color: white;
+	font-weight: bold;
+}
+/*---------INTERMAREAL-----------*/
+/*recordar: separar en fondo y otros, para no repetir código...*/
+
+/* Dropdown menu */
+.menu-sala { /*es casi lo mismo que .menu_izq con el dropdownmenu, ordenar después...*/
+   display: block;
+	position: absolute;
+	width: 20vw;
+	height: 25vw;
+	top: -29%;
+	left: 2%;
+	max-width: 548px;
+    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+    /*padding: 12px 16px;*/
+    /*background-color: #FFB10B;*/
+}
+.menu-sala.verticalTranslate {
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.menu-sala.verticalTranslateBack {
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu-btn-home {
+	position: absolute;
+	top: 20%;
+	left: 30.5%;
+	width: 40%;
+	max-width: 191px;
+}
+.menu-btn-flecha {
+	position: absolute;
+	top: 76%;
+	left: 46.2%;
+	width: 8%;
+}
+
+/* Modal, ventana de detalle para botones */
+ /* The Modal (background) */
+.btn-detalle {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0%;
+    top: 0%;
+    width: 100%; /* Full width */
+    height: 63vw; /* "Full" height, con vw no se descuadra la imagen con respecto al resto. */
+    max-width: 1980px;
+    max-height: 1080px;
+    /*overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    cursor: pointer; /* Permite a Safari Mobile pescar el window.onclick */
+}
+
+/* Modal Content/Box */
+/*
+.btn-detalle-fondo {
+	position: absolute;
+	top: 17%;
+	left: 25%;
+    width: 48%;
+    max-width: 1594px;
+}
+.btn-detalle-icono {
+	position: absolute; 
+}
+.btn-detalle-texto-titulo {
+	position: absolute;
+	top: 8%;
+	left: 23%;
+	width: 55%;
+	font-family: "Pacifico";
+	font-size: 2.5vw;
+	color: white;
+}
+.btn-detalle-texto-contenido {
+	position: absolute;
+	top: 25%;
+	right: 35%;
+	width: 55%;
+	font-family: "Roboto";
+	font-size: 1.2vw;
+	color: white;
+}
+.btn-detalle-siguiente {
+	position: absolute;
+	top: 70%;
+	left:30%;
+	width: 35%;
+}
+*/
+/* Etiqueta de sala */
+/*
+.etiqueta-sala-v1 {
+	position: absolute;
+	top: 2%;
+	right: 0px;
+	width: 22%;
+	max-width: 494px;
+}
+.etiqueta-sala-v2 {
+	position: absolute;
+	top: 2%;
+	right: 0px;
+	width: 22vw;
+	height: 4vw;
+	max-width: 494px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #FFB10B;
+}
+.texto-sala-1 {
+	position: absolute;
+	top: 33%;
+	left: 29%;
+	font-family: "Pacifico";
+	font-size:1.3vw;
+	color: white;
+}
+.texto-sala-2 {
+	position: absolute;
+	top: 0%;
+	left: 44%;
+	font-family: "Pacifico";
+	font-size: 2.2vw;
+	color: white;
+}
+*/
+/*armado de imagenes de fondo y botones, todo con "responsiveness"*/
+/*
+.fondo-pattern-olas {
+	background-image: url('/../imagenes/pattern_olas.png');
+	background-repeat: repeat;
+	background-size: 30% auto;
+	background-color: #000080;
+}
+*/
+/*
+.intermareal-fondo {
+	position: relative;
+	background-color: #000080;
+	max-width: 1980px;
+	max-height: 1080px;
+	padding-bottom: 63.278%;  56.25 -> 16:9 Aspect Ratio 
+}
+*/
+/*
+.intermareal-cielo {
+	position: absolute;
+	width: 100%;
+	top: 0%;
+	right: 0%;
+	max-width: 1980px;
+}
+
+.intermareal-mar {
+	position: absolute;
+	width: 100%;
+	top: 47%;
+	right: 0%;
+	max-width: 1980px;
+}
+
+.intermareal-playa {
+	position: absolute;
+	width: 100%;
+	top: 21%;
+	right: 0%;
+	max-width: 1980px;
+}
+
+.intermareal-ciudad {
+	position: absolute;
+	width: 50%;
+	top: 0%;
+	right: 0%;
+	max-width: 1124px;
+
+}
+
+.intermareal-btn-habitat {
+	position: absolute;
+	width: 45%;
+	top: 44%;
+	right: 0%;
+	max-width: 948px;
+}
+
+.intermareal-btn-mareas {
+	position: absolute;
+	width: 5%;
+	top: 10%;
+	left: 20%;
+}
+
+.intermareal-btn-seresvivos {
+	position: absolute;
+	width: 10%;
+	top: 25%;
+	left: 35%;
+}
+
+.intermareal-btn-nosotros {
+	position: absolute;
+	width: 12%;
+	top: 20%;
+	left: 62%;
+}
+
+.intermareal-btn-playas {
+	position: absolute;
+	width: 15%;
+	top: 40%;
+	left: 50%;
+}
+
+.intermareal-btn-recursos {
+	position: absolute;
+	width: 6%;
+	top: 61%;
+	left: 63%;
+}
+
+.intermareal-btn-quiencome {
+	position: absolute;
+	width: 10%;
+	top: 63%;
+	left: 70%;
+}
+
+.intermareal-btn-olas {
+	position: absolute;
+	width: 20%;
+	top: 75%;
+	left: 45%;
+}
+
+.intermareal-btn-ciclos {
+	position: absolute;
+	width: 10%;
+	top: 80%;
+	left: 85%;
+}
+*/
+
+/*---------ESQUEMAS-----------*/
+/* dicen intermareal, pero en realidad se usan para todas las salas.*/
+.menu-btn-home-esquema {
+	position: absolute;
+	top: 7%;
+	left: 32%;
+	width: 38%;
+}
+.menu-btn-sala-esquema {
+	position: absolute;
+	top: 43%;
+	left: 32%;
+	width: 38%;
+}
+/*armado de imagenes de fondo y botones, todo con "responsiveness"*/
+/*
+.esquema-intermareal-fondo {
+	position: relative;
+	background-color: #114B72;
+	background: -webkit-linear-gradient(top, #00C2CA, #015577) fixed;
+	background: -o-linear-gradient(top, #00C2CA, #015577) fixed;
+	background: -moz-linear-gradient(top, #00C2CA, #015577) fixed;
+	background: linear-gradient(top, #00C2CA, #015577) fixed;
+	background-repeat: repeat;
+	max-width: 1980px;
+	max-height: 1080px;
+	padding-bottom: 63.278%; 
+}
+
+.esquema-intermareal-titulo {
+	position: absolute;
+	width: 70%;
+	top: 2%;
+	left: 15%;
+	font-family: "Pacifico";
+	font-size: 2.2vw;
+	text-shadow: 0.15vw 0.15vw black;
+	text-align: center;
+	color: white;
+	line-height: 7vw;
+}
+.titulo-center-middle {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1.4;
+}
+.esquema-intermareal-marco-imagen {
+	position: absolute;
+	width: 65%;
+	top: 14%;
+	left: 2%;
+}
+.esquema-intermareal-imagen {
+	position: absolute;
+	width: 58%;
+	top: 18%;
+	left: 5.5%;
+}
+.esquema-intermareal-marco-imagen {
+	position: absolute;
+	width: 64.22vw;
+	top: 14%;
+	left: 2%;
+	z-index: 1;
+}
+.esquema-intermareal-imagen {
+	position: absolute;
+	width: 62%;
+	top: 15.57%;
+	left: 3.281%;
+}
+*/
+.esquema-intermareal-marco-texto {
+	position: absolute;
+	width: 27%;
+	top: 15%;
+	left: 71%;
+}
+.esquema-intermareal-marco-texto-contenido {
+	position: absolute;
+	top: 7%;
+	left: 20%;
+	width: 62%;
+	font-family: "Roboto";
+	font-size: 1.2vw;
+	text-align: justify;
+	color: white;
+}
+.esquema-etiqueta-marcador {
+	position: absolute;
+	width: 1.95%;
+	/*top: 30.5%;*/
+	right: 2.75%;
+	line-height: 0;
+}
+.esquema-intermareal-barometro {
+	position: absolute;
+	width: 68%;
+	top: 84%;
+	left: 3%;
+}
+.esquema-intermareal-barometro-olas {
+	position: absolute;
+	width: 13.65%;
+	top: 84.5%;
+	/*left: 3.3%;*/
+}
+.esquema-intermareal-barometro-numeros {
+	position: absolute;
+	top: 79.5%;
+	font-family: "Pacifico";
+	font-size: 7vw;
+	color: white;
+	text-shadow: 0.3vw 0.3vw black;
+}
+.numero-1 {
+	left: 7%;
+}
+.numero-2 {
+	left: 19%;
+}
+.numero-3 {
+	left: 31%;
+}
+.numero-4 {
+	left: 43%;
+}
+.numero-5 {
+	left: 55%;
+}
+.esquema-intermareal-barometro-barra {
+	position: absolute;
+	top: 84.5%;
+	left: 3.4%;
+	background-color: #062744;
+	/*width: 2vw;*/
+	height: 5.6vw;
+	/*max-height: 100px;*/
+	border-radius: 10px;
+}
+/*---------OCÉANO COSTERO-----------*/
+/* por el momento, está escrito el menú desplegable del lado izquierdo, en intermareal*/
+
+/* Etiqueta de sala */
+/*
+.etiqueta-sala-v1 {
+	position: absolute;
+	top: 2%;
+	right: 0px;
+	width: 22%;
+	max-width: 494px;
+}
+.texto-sala-1 {
+	position: absolute;
+	top: 33%;
+	left: 15%;
+	font-family: "Pacifico";
+	font-size:1.3vw;
+	color: white;
+}
+.texto-sala-2 {
+	position: absolute;
+	top: 0%;
+	left: 30%;
+	font-family: "Pacifico";
+	font-size: 2.2vw;
+	color: white;
+}
+*/
+/*armado de imagenes de fondo y botones, todo con "responsiveness"*/
+/*
+.oceanocostero-fondo {
+	position: relative;
+	background: #000080; 
+    background: -webkit-linear-gradient(top, #e6e6ff 20%, #000080 100%);
+    background: -o-linear-gradient(top, #e6e6ff 20%, #000080 100%); 
+    background: -moz-linear-gradient(top, #e6e6ff 20%, #000080 100%);
+    background: linear-gradient(top, #e6e6ff 20%, #000080 100%); 
+	max-width: 1980px;
+	max-height: 1080px;
+	padding-bottom: 63.278%; /* 56.25 -> 16:9 Aspect Ratio */
+}
+/*
+.oceanocostero-cielo {
+	position: absolute;
+	width: 100%;
+	top: 0%;
+	right: 0%;
+	max-width: 1980px;
+}
+.oceanocostero-tierra {
+	position: absolute;
+	width: 55%;
+	top: 7%;
+	right: 0%;
+	max-width: 1077px;
+}
+.oceanocostero-oceano {
+	position: absolute;
+	width: 100%;
+	top: 28%;
+	right: 0%;
+	max-width: 1980px;
+}
+.oceanocostero-rocasmar {
+	position: absolute;
+	width: 100%;
+	bottom: 0%;
+	right: 0%;
+	max-width: 1918px;
+}
+.oceanocostero-olas {
+	position: absolute;
+	width: 14%;
+	top: 26.5%;
+	right: 44.5%;
+	max-width: 293px;
+}
+.oceanocostero-rocas {
+	position: absolute;
+	width: 14%;
+	top: 41.5%;
+	right: 0%;
+	max-width: 289px;
+}
+.oceanocostero-sol {
+	position: absolute;
+	width: 12%;
+	top: 2%;
+	left: 2%;
+	max-width: 273px;
+}
+.oceanocostero-pulpo {
+	position: absolute;
+	width: 11%;
+	top: 83%;
+	left: 19%;
+}
+.oceanocostero-fardela_1 {
+	position: absolute;
+	width: 3%;
+	top: 2%;
+	left: 44%;
+}
+.oceanocostero-fardela_2 {
+	position: absolute;
+	width: 4%;
+	top: 3%;
+	left: 48%;
+}
+.oceanocostero-delfin {
+	position: absolute;
+	width: 18%;
+	top: 31%;
+	left: 2%;
+}
+.oceanocostero-cardumen {
+	position: absolute;
+	width: 39%;
+	top: 55%;
+	left: 42%;
+}
+.oceanocostero-btn-impacto {
+	position: absolute;
+	width: 20%;
+	top: 60%;
+	left: 5%;
+}
+.oceanocostero-btn-interaccion {
+	position: absolute;
+	width: 12%;
+	top: 37%;
+	left: 38%;
+}
+.oceanocostero-btn-interes {
+	position: absolute;
+	width: 13%;
+	top: 66%;
+	right: 7%;
+}
+.oceanocostero-btn-procesos {
+	position: absolute;
+	width: 17%;
+	top: 9%;
+	left: 25%;
+}
+.oceanocostero-btn-riquezas {
+	position: absolute;
+	width: 12%;
+	bottom: 9.5%;
+	left: 33.5%;
+}
+.oceanocostero-btn-vidabajo {
+	position: absolute;
+	width: 8%;
+	top: 45%;
+	left: 62%;
+}
+*/
+
+/*---------ISLAS OCEÁNICAS-----------*/
+
+
+
+/*------------------------------------*\
+    IMAGES
+\*------------------------------------*/
+
+
+
+/*------------------------------------*\
+	TYPOGRAPHY
+\*------------------------------------*/
+
+@font-face {
+	font-family:'Font-Name';
+	src:url('fonts/font-name.eot');
+	src:url('fonts/font-name.eot?#iefix') format('embedded-opentype'),
+		url('fonts/font-name.woff') format('woff'),
+		url('fonts/font-name.ttf') format('truetype'),
+		url('fonts/font-name.svg#font-name') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+
+/*------------------------------------*\
+    RESPONSIVE
+\*------------------------------------*/
+
+@media only screen and (min-width:320px) {
+
+}
+@media only screen and (min-width:480px) {
+
+}
+@media only screen and (min-width:768px) {
+
+}
+@media only screen and (min-width:1024px) {
+
+}
+@media only screen and (min-width:1140px) {
+
+}
+@media only screen and (min-width:1280px) {
+
+}
+@media only screen and (min-width:1980px) {
+
+}
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+	   only screen and (min-resolution:144dpi) {
+
+}
+
+/*------------------------------------*\
+    MISC
+\*------------------------------------*/
+
+::selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-webkit-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-moz-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
